@@ -6,4 +6,3 @@ upload basic.py
 
 ### Today's goal
 [ ] 분기별로 나누기
-[ ]
