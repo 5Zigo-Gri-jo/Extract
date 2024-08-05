@@ -29,7 +29,8 @@ source .venv/bin/activate
 ```
 
 ## 모듈 기능
-extract_package.py
+ extract.py
 - 영화진흥위원회 오픈 API 기능을 통해 지정한 년도의 박스오피스 데이터를 ``` request ```받아 저장하는 모듈입니다.
+- 이 파일은  2019년의 데이터를 일별로 추출하여 각각 365개의 parquet으로 저장하는 역할을 하는 함수를 담고 있습니다.
 
 
