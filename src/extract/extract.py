@@ -1,6 +1,23 @@
 import requests
 import os
 import pandas as pd
+from datetime import datetime
+from datetime import timedelta
+
+def date_string(date):
+	date_list = str(date).split()[0].split('-')
+	date_str = date_list[0]+date_list[1]+date_list[2]
+	return date_str
+
+def looper():
+	from datetime import datetime
+	date = datetime(2019,1,1)
+	date_str = date_string(date)
+	while date_str != '20191231':
+		date = date + timedelta(days=1)
+		date_str = date_string(date)
+		df = save2df(date_str)
+		print(df.head(5))
 
 def save2df(load_dt='20190101', url_param={}):
     """airflow 호출 지점"""
