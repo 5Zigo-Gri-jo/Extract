@@ -1,9 +1,36 @@
-# Extract
-#
-PLAYDATA 데이터엔지니어링 32기, 팀 5Zigo-Gri-jo(5지고 지리조)의 Extract입니다.
+# Extract_package
+이 프로젝트는 영화진흥위원회에서 일별 박스 오피스 데이터를 추출하여 Parquet 파일로 저장합니다. 데이터는 날짜별로 정리되며, 추출 날짜의 타임스탬프를 포함합니다.
 
 
-## dev/d1.0.0
-#
-위 브랜치는 https://github.com/dMario24/mov/blob/0.3.3/url_param/src/mov/api/call.py를 기본 구조로 사용하였습니다.
+## 목차
+
+- [필요 조건](#필요-조건)
+- [설치](#설치)
+- [모듈 기능](#모듈-기능)
+
+## 필요 조건
+
+- Python 3.x
+- `requests` 라이브러리
+- `pandas` 라이브러리
+- `pyarrow` 라이브러리 (Parquet 파일 저장을 위해 필요)
+
+## 설치
+- repository 설치 방법
+```
+git clone https://github.com/5Zigo-Gri-jo/Extract.git
+```
+
+- 설치 이후 환경설정
+```
+pdm init
+pdm install
+source .venv/bin/activate
+```
+
+## 모듈 기능
+ extract.py
+- 영화진흥위원회 오픈 API 기능을 통해 지정한 년도의 박스오피스 데이터를 ``` request ```받아 저장하는 모듈입니다.
+- 이 파일은  2019년의 데이터를 일별로 추출하여 각각 365개의 parquet으로 저장하는 역할을 하는 함수를 담고 있습니다.
+
 
