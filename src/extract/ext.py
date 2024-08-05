@@ -8,7 +8,7 @@ def save2df(load_dt='20190101', url_param={}):
     # df 에 load_dt 컬럼 추가 (조회 일자 YYYYMMDD 형식 으로)
     df['load_dt'] = load_dt
     # 아래 파일 저장시
-    df.to_parquet(f'~/data/2019movie/{date_str}.parquet')
+    df.to_parquet(f'~/data/2019movie/{load_dt}.parquet')
     return df
 
 
