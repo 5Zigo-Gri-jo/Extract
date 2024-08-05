@@ -1,6 +1,12 @@
 import requests
 import os
 import pandas as pd
+from datetime import datetime, timedelta
+
+def date_string(date):
+    date_list = str(date).split()[0].split('-')
+    date_str = date_list[0]+date_list[1]+date_list[2]
+    return date_str
 
 def save2df(load_dt='20190101', url_param={}):
     """airflow 호출 지점"""
