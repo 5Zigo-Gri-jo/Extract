@@ -17,6 +17,6 @@ source .venv/bin/activate
 
 ## 모듈 기능
 ### extract_package.py
-* 영화진흥위원회 오픈 API 기능을 통해 지정한 년도의 박스오피스 데이터를 ``` request ```받아 저장하는 모듈입니다.
+- 영화진흥위원회 오픈 API 기능을 통해 지정한 년도의 박스오피스 데이터를 ``` request ```받아 저장하는 모듈입니다.
 
 
